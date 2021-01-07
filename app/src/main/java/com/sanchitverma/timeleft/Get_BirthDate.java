@@ -27,7 +27,8 @@ public class Get_BirthDate extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_get_birtdate);
-        AppCenter.start(getApplication(), String.valueOf(R.string.appCenterSecretKey),Analytics.class, Crashes.class);
+//        AppCenter.start(getApplication(), String.valueOf(R.string.appCenterSecretKey),Analytics.class, Crashes.class);
+        AppCenter.start(getApplication(), "a21addb5-e3b5-4bf3-a56e-a1ca49785f6b",Analytics.class, Crashes.class);
         date = findViewById(R.id.date);
         month = findViewById(R.id.month);
         year = findViewById(R.id.year);
